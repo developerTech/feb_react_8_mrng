@@ -1,0 +1,373 @@
+https://code.visualstudio.com/download (install)
+https://nodejs.org/en/ (install)
+https://github.com/ (create account)
+https://github.com/Aakashdeveloper (follow)
+https://git-scm.com/downloads (install)
+https://www.postman.com/ (install)
+
+//extension to chrome
+https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh
+
+//Extensions to vscode
+> TabNine
+> vscode-icons
+> git history
+> git Lens
+> spellCheck
+> eslint
+
+> https://github.com/Aakashdeveloper/feb_react_mrng8_22
+
+
+html
+css
+bootstrap 3,4,5
+Npm
+React = 3
+Mock API
+json-server
+React_hooks -1
+React-JWT(Login Logout)-2
+Github
+Deployment
+-> MERN
+-> Aws
+-> heroku
+-> Docker
+-> Nginx
+-> Netlify
+HOC
+React-GraphQL - 1 
+Basic React Native- 1
+React-Redux - 1
+React-Redux - 1
+React-PWA - 1
+Testing Jest Enzime
+///////Walkthrough///////
+React-Saga -1
+React-with-typescript-1
+--------NOT Backend--------------
+API
+GraphQL
+Login/Logout
+
+////////////////
+React> React is a frontend lib/framework which
+help to build single page application
+using component based structure
+
+open source
+
+186863
+///////Json////
+way to represent data
+[
+    {
+        "name":"John",
+        "class":"UI",
+        "city":"Paris"
+    },
+    {
+        "name":"Amit",
+        "class":"React",
+        "city":"Mumbai"
+    }
+]
+
+////package.json///////
+> Entry Point to the app
+> First file in the app
+> all the packages
+> command start,build,test
+> meta data (name,description,version)
+
+////Step to generate package.json///////
+**NodeJs must be install in system
+> go inside the folder using terminal/cmd
+> npm init
+> answer all questions
+> type "yes"
+
+////Step to install packages///////
+> go inside the folder using terminal/cmd
+> npm i packagename
+
+/////setup react in system/////
+> go inside the folder using terminal/cmd
+> npx create-react-app appname
+
+
+////////////////////////////////
+# Window
+>>One Time in new system
+> open the cmd as administrator
+> npm i -g create-react-app
+
+>>Next All Time you need new app
+> go inside the folder using cmd
+> create-react-app appname
+
+# Mac/Linux
+>>One Time in new system
+> open terminal
+> sudo npm i -g create-react-app
+
+>>Next All Time you need new app
+> go inside the folder using terminal
+> create-react-app appname
+
+
+////Step to run react app///////
+> go inside the folder using terminal/cmd
+> npm start
+
+react > react is the main library
+react-script > react script help to run the application
+react-dom > help to render the content
+
+//es5 > ecmaScript5
+function add(a,b){
+    return a+b
+}
+
+//es6 > ecmaScript6
+const add = (a,b) => { return a+b}
+
+
+
+function add(a,b){
+    return a,b
+}
+
+add(1,2)
+2
+
+
+
+hookscomponent
+
+//////////////////
+head 
+>>> all the linking with css,javascript
+>>> contains title of the page
+
+body
+>>> All the thing which is visible to the user
+
+
+inline Element
+> that always in same line
+> take only space which is required
+> span a img
+
+block level
+> that always in new line
+> take space of whole width
+> p div h1-h6
+
+https://raw.githubusercontent.com/Aakashdeveloper/Aakashdeveloper/master/README.md
+
+////////////////
+css
+////////////////
+inline
+StyleTag
+StyleSheet
+
+inline > StyleTag > StyleSheet
+
+div
+
+inline
+{
+    color:red,
+    font-size:30px
+}
+
+StyleTag
+{
+    color:green,
+    text-align:center;
+    border:none
+}
+
+StyleSheet
+{
+    font-size:40px;
+    text-align:right;
+    border-radius:50%
+}
+
+{
+   color:red;
+   font-size:30px;
+   text-align:center;
+   border:none;
+   border-radius:50%
+}
+
+////////////////
+TagName > a, p, div, img
+className(.) > to target group of Element with same property
+Id(#) > to target something unique
+
+position in css
+
+////// 12 gird ////////////
+//bs3
+xs > 768px,
+sm < 768px;
+md < 992px; 
+lg < 1200px
+//
+
+//////
+class
+> Logical Component
+> calling api, write logic,display
+> can maintain state
+
+functional
+> Dumb Component
+> display purpose
+> cannot maintain state
+
+
+////
+State
+> State act like local variable
+> Every Component can have its own state
+> State can be accesible in same component or nested
+> We can update the value of state(mutable)
+
+Props
+> Props help to transfer the data
+> Data can be  transfer in between nested components
+> We cannot update value of props (immutable)
+
+// javascript
+maps
+filter
+indexof
+
+var a = [4,7,3,8]
+a.map((data) => {return data*2})
+[8, 14, 6, 16]
+
+
+var a = [4,7,3,8]
+a.map((data) => {return `<p>${data}</p>`})
+
+ ['<p>4</p>', '<p>7</p>', '<p>3</p>', '<p>8</p>']
+
+//es5
+var age = 10
+var out = My age is '+a;
+"My age is 10"
+
+//es6
+let age = 10
+let out = `My age is ${a}`
+out
+'My age is 10'
+
+
+var a = [4,7,3,8];
+
+for(i=0;i<a.length;i++){
+    if(name =="a"){
+       a[i]= name
+    }
+}
+
+var a = [
+    {
+        "name":"John",
+        "city":"Delhi"
+    },
+    {
+        "name":"Ankit",
+        "city":"Newyork"
+    }
+];
+
+name == "Ankit"
+
+
+a[1].name = "Ankit"
+
+
+a.map((data) => {
+     if(data.name == "Ankit"){
+       a.splice()
+    }
+    return `<p>${data}</p>`})
+
+
+var a = [5,7,9,3,6,2,8]
+a.filter((data) => { return data<5})
+
+var a = [5,7,9,3,6,2,8]
+a.filter((data) => { return data>5})
+(4) [7, 9, 6, 8]
+
+var city = ['Delhi', 'Mumbai', 'London', 'Helsinki', 'Venice', 'Amsterdam']
+city.indexOf('Delhi')
+0
+city.indexOf('Venice')
+4
+city.indexOf('Pune')
+-1
+city.indexOf('Boston')
+-1
+
+parent => child (props)
+child => Parent (props with function)
+
+parent (define function)
+child (call function)
+
+function add(a,b){
+    return a+b
+}
+
+add(1,2)
+
+3
+
+ npm i react-router-dom@5.3.0
+
+ ///params (/)
+ > it is compulsory to define the params
+ > mainly use for single data
+
+ ///queryParams (?)
+ > no need to  define
+ > use to pass more than one record
+
+ /// default props under routing
+ > history   >> use for redirection
+ > location  >> use for query params
+ > match     >> use for params
+
+ 
+(get) cityname >           https://zomatoajulypi.herokuapp.com/location
+(get) restwrtcity >        https://zomatoajulypi.herokuapp.com/restaurant?stateId=1
+(get) quickSearch>         https://zomatoajulypi.herokuapp.com/quicksearch
+
+
+(get) onbasisofMeal >      https://zomatoajulypi.herokuapp.com/restaurant?mealtype_id=
+(get) cuisinefilter >      https://zomatoajulypi.herokuapp.com/filter/4?cuisine=1
+(get) costfilter >         https://zomatoajulypi.herokuapp.com/filter/1?hcost=1000&lcost=500
+
+(get) restdetails >       http://zomatoajulypi.herokuapp.com/details/1
+(get) menu >               https://zomatoajulypi.herokuapp.com/menu/1
+
+(post) orderspage >        http://zomatoajulypi.herokuapp.com/menuItem
+                           body [1,4,5]
+(post)placeOrder >  
+
+(get) allorder>            
+       
+(get) restaurants>         https://zomatoajulypi.herokuapp.com/restaurants
+https://developerpayment.herokuapp.com/paynow
