@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import MenuDisplay from './menuDisplay';
 import axios from 'axios';
+import {Link} from 'react-router-dom'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import './details.css';
@@ -17,8 +18,17 @@ class Details extends Component{
             details:'',
             menuList:'',
             userItem:'',
-            mealId:''
+            mealId: sessionStorage.getItem('mealId')?sessionStorage.getItem('mealId'):1
         }
+    }
+
+    addToCart = (data) => {
+        this.setState({userItem:data})
+    }
+
+    proceed = () => {
+        sessionStorage.setItem('menu',this.state.userItem)
+        this.props.history.push(`/placeOrder/${this.state.details.restaurant_name}`)
     }
 
     render(){
@@ -65,13 +75,19 @@ class Details extends Component{
                                         <h3>Phone: {details.contact_number}</h3>
                                     </TabPanel>
                                 </Tabs>
+                                <Link to={`/listing/${this.state.mealId}`} className="btn btn-danger">Back</Link>
+                                &nbsp;
+                                <button className="btn btn-success"
+                                onClick={this.proceed}>Proceed</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="col-md-12">
                     <center><h2>Menu</h2></center>
-                    <MenuDisplay menudata={this.state.menuList}/>
+                    <MenuDisplay menudata={this.state.menuList}
+                    finalOrder = {(data) => {this.addToCart(data)}}
+                    />
                 </div>
                 
             </>

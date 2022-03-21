@@ -371,3 +371,26 @@ add(1,2)
        
 (get) restaurants>         https://zomatoajulypi.herokuapp.com/restaurants
 https://developerpayment.herokuapp.com/paynow
+
+var a = [4,7,8,9,2,5,7]
+undefined
+a.splice(3,1)
+[9]
+a
+(6) [4, 7, 8, 2, 5, 7]
+a.indexOf(7)
+1
+a.splice(a.indexOf(7),1)
+[7]
+a
+(5) [4, 8, 2, 5, 7]
+a.splice(a.indexOf(7),1)
+[7]
+a
+(4) [4, 8, 2, 5]
+a
+(4) [4, 8, 2, 5]
+a.splice(a.indexOf(7),1)
+[5]
+a
+(3) [4, 8, 2]
