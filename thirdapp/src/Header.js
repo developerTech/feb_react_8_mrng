@@ -16,10 +16,10 @@ class Header extends Component {
                     <Link to="/" className="btn btn-info">Home</Link>
                 </div>
                 <div id="social">
-                   <Link to="/" className="btn btn-success">
+                   <Link to="/login" className="btn btn-success">
                        <span className="glyphicon glyphicon-log-in"></span> LogIn</Link>
                    &nbsp;
-                   <Link to="/" className="btn btn-info">
+                   <Link to="/register" className="btn btn-info">
                     <span className="glyphicon glyphicon-user"></span> Register</Link>
                 </div>
             </header>
