@@ -34,11 +34,10 @@ Deployment
 -> heroku
 -> Netlify
 -> Aws
-///////////////////////////////////////
 -> Docker
 -> Nginx
+///////////////////////////////////////
 React_hooks -1
-
 HOC
 React-GraphQL - 1 
 Basic React Native- 1
@@ -416,3 +415,6 @@ npx json-server --watch orders.json --port 6700
 /******UserInfo*****/
 (GET) => https://developerjwt.herokuapp.com/api/auth/userinfo
 (Header) => {'x-access-token':'token value from login'}
+
+docker build . -t imageName
+docker run -p 3000:9800 imageName
